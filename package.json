@@ -1,0 +1,23 @@
+{
+  "name": "shopping-cart",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "create-react-class": "^15.6.2",
+    "observer-pattern": "^1.0.7",
+    "react": "^16.1.0",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.1.0",
+    "react-event-observer": "^0.4.11",
+    "react-icons": "^2.2.7",
+    "react-motion": "^0.5.2",
+    "react-scripts": "1.0.17",
+    "react-swipeable-views": "^0.12.10"
+  },
+  "scripts": {
+    "start": "NODE_PATH=src:src:src/components:src/data react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
