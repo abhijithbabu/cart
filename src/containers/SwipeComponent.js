@@ -3,10 +3,7 @@ import SwipeableViews from 'react-swipeable-views';
 import AppBody from './AppBody';
 import Products from '../data/products';
 
-import {
-    bindKeyboard,
-    bindMouse
-} from 'react-swipeable-views-utils';
+import { bindKeyboard } from 'react-swipeable-views-utils';
 
 const BindKeyboardSwipeableViews = bindKeyboard(SwipeableViews);
 
@@ -53,6 +50,7 @@ class SwipeComponent extends Component {
                     var elem = document.getElementById(x);
                     elem.scrollTop = 0;
                 }
+                return false;
             });
         }
     }

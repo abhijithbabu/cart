@@ -34,6 +34,7 @@ class Cart extends Component {
                 itemindex = index;
                 return true;
             }
+            return false;
         });
         if (typeof itemId !== 'undefined') {
             newItems.splice(itemindex, 1)
