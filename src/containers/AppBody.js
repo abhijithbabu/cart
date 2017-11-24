@@ -20,7 +20,10 @@ class AppBody extends Component {
             )
         });
         return (
-            <div id="app_body" className="section-wrapper row">{products}</div>
+            <div>
+                <div className="section-wrapper app_body row">{products}</div>
+
+            </div>
         )
     }
 }

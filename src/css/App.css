@@ -80,8 +80,9 @@
     overflow: hidden;
     position: relative;
 }
-#app_body {
-    margin: 30px 0;
+.app_body {
+    margin: 30px 15px;
+    float: left;
 }
 .product_description,
 .product_price {
@@ -314,3 +315,20 @@ border-color: rgba(238, 238, 238, 0);
     background: #fff;
 }
 
+#itm-count{
+    position: absolute;
+    top: 1px;
+    color: #3C9DD1;
+    font-size: 13px;
+    width: 35px;
+    text-align: center; 
+    font-weight: bold;
+}
+
+
+.products-container{
+    height: -moz-calc(100vh - 100px);
+    height: -webkit-calc(100vh - 100px);
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+}

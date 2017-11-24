@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ReactObserver from 'react-event-observer';
 import AppHeader from './containers/AppHeader';
-import AppFooter from './containers/AppFooter';
 import SwipeComponent from './containers/SwipeComponent';
 import registerServiceWorker from './registerServiceWorker';
 
@@ -20,7 +19,7 @@ class Main extends Component {
                 <div className="AppBody">  
                     <SwipeComponent observer={this.observer} />
                 </div>
-                <AppFooter />
+              
             </div>
         )
     }

@@ -34,7 +34,6 @@ class Cart extends Component {
                 itemindex = index;
                 return true;
             }
-			return false;
         });
         if (typeof itemId !== 'undefined') {
             newItems.splice(itemindex, 1)
@@ -55,7 +54,9 @@ class Cart extends Component {
     }
     render() {
         var currency = '';
+        var itemCount = 0;
         var items = this.state.items.map(function(item) {
+            itemCount++;
             currency = item.currencysymbol;
             return (
                 <li  key={item.id}>
@@ -67,7 +68,10 @@ class Cart extends Component {
         var body = (<div><ul id="items-ul">{items}</ul><div className="total-text">Total: {currency} {this.state.total}</div></div>);
         var empty = <div>Cart is Empty</div>;
         return (
-            <div className={this.props.displaytrigger} id="cart-items-container">{items.length > 0 ? body : empty}</div>
+            <div>
+                <div id="itm-count">({itemCount})</div>
+                <div className={this.props.displaytrigger} id="cart-items-container">{items.length > 0 ? body : empty}</div>
+            </div>
         );
     }
 
